@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2178EA574B7F76ED442F8338 /* Pods_WePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51468018560ABED1492409A /* Pods_WePlay.framework */; };
+		E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C668B1E57A37700F83B1B /* LoginVC.swift */; };
+		E10C668F1E57AD2B00F83B1B /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E10C668E1E57AD2B00F83B1B /* bg.mp4 */; };
 		E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924971E576BF100B4F272 /* AppDelegate.swift */; };
 		E1B9249A1E576BF100B4F272 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924991E576BF100B4F272 /* RootViewController.swift */; };
 		E1B9249C1E576BF100B4F272 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9249B1E576BF100B4F272 /* DataViewController.swift */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CA50444CBBEE7ED893B34B8 /* Pods-WePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.release.xcconfig"; sourceTree = "<group>"; };
+		495D44151163812C16396A32 /* Pods-WePlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.debug.xcconfig"; sourceTree = "<group>"; };
+		B51468018560ABED1492409A /* Pods_WePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10C668B1E57A37700F83B1B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E10C668E1E57AD2B00F83B1B /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		E1B924941E576BF100B4F272 /* WePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B924971E576BF100B4F272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B924991E576BF100B4F272 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2178EA574B7F76ED442F8338 /* Pods_WePlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55FB6E22379C19DD423DCD6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B51468018560ABED1492409A /* Pods_WePlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7264F0660FE427CC4B4A909C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				495D44151163812C16396A32 /* Pods-WePlay.debug.xcconfig */,
+				1CA50444CBBEE7ED893B34B8 /* Pods-WePlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E1B9248B1E576BF000B4F272 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +111,8 @@
 				E1B924AF1E576BF100B4F272 /* WePlayTests */,
 				E1B924BA1E576BF100B4F272 /* WePlayUITests */,
 				E1B924951E576BF100B4F272 /* Products */,
+				7264F0660FE427CC4B4A909C /* Pods */,
+				55FB6E22379C19DD423DCD6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +133,12 @@
 				E1B924991E576BF100B4F272 /* RootViewController.swift */,
 				E1B9249B1E576BF100B4F272 /* DataViewController.swift */,
 				E1B9249D1E576BF100B4F272 /* ModelController.swift */,
+				E10C668B1E57A37700F83B1B /* LoginVC.swift */,
 				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
 				E1B924A21E576BF100B4F272 /* Assets.xcassets */,
 				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E1B924A71E576BF100B4F272 /* Info.plist */,
+				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -138,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B924C01E576BF100B4F272 /* Build configuration list for PBXNativeTarget "WePlay" */;
 			buildPhases = (
+				A367B7B0476C5140B77C7EEF /* [CP] Check Pods Manifest.lock */,
 				E1B924901E576BF000B4F272 /* Sources */,
 				E1B924911E576BF000B4F272 /* Frameworks */,
 				E1B924921E576BF000B4F272 /* Resources */,
+				7701177C5B119903074EF73D /* [CP] Embed Pods Frameworks */,
+				688A17008C2D19893F57F0ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +276,7 @@
 			files = (
 				E1B924A61E576BF100B4F272 /* LaunchScreen.storyboard in Resources */,
 				E1B924A31E576BF100B4F272 /* Assets.xcassets in Resources */,
+				E10C668F1E57AD2B00F83B1B /* bg.mp4 in Resources */,
 				E1B924A11E576BF100B4F272 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +297,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		688A17008C2D19893F57F0ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePlay/Pods-WePlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7701177C5B119903074EF73D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePlay/Pods-WePlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A367B7B0476C5140B77C7EEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1B924901E576BF000B4F272 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +354,7 @@
 				E1B9249E1E576BF100B4F272 /* ModelController.swift in Sources */,
 				E1B9249C1E576BF100B4F272 /* DataViewController.swift in Sources */,
 				E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */,
+				E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +502,7 @@
 		};
 		E1B924C11E576BF100B4F272 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 495D44151163812C16396A32 /* Pods-WePlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X7JTK6KCA7;
@@ -432,6 +516,7 @@
 		};
 		E1B924C21E576BF100B4F272 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA50444CBBEE7ED893B34B8 /* Pods-WePlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X7JTK6KCA7;
@@ -520,6 +605,7 @@
 				E1B924C21E576BF100B4F272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1B924C31E576BF100B4F272 /* Build configuration list for PBXNativeTarget "WePlayTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +614,7 @@
 				E1B924C51E576BF100B4F272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1B924C61E576BF100B4F272 /* Build configuration list for PBXNativeTarget "WePlayUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +623,7 @@
 				E1B924C81E576BF100B4F272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
