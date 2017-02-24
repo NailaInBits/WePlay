@@ -5,5 +5,6 @@ target 'WePlay' do
 
   pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod 'Firebase/Core'
 
 end
