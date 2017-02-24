@@ -35,12 +35,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ces-4Z-frP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103.2" y="-904.49775112443785"/>
+            <point key="canvasLocation" x="-303" y="-904"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing PageVC-->
         <scene sceneID="Xm0-hW-8pN">
             <objects>
-                <viewController id="nNs-R9-Mdw" sceneMemberID="viewController">
+                <viewController id="nNs-R9-Mdw" customClass="LandingPageVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZER-qi-eWA"/>
                         <viewControllerLayoutGuide type="bottom" id="Vjn-Dp-Vh1"/>
@@ -48,12 +48,18 @@
                     <view key="view" contentMode="scaleToFill" id="Wuw-WV-X91">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyK-1F-Gex">
+                                <rect key="frame" x="0.0" y="28" width="104" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPV-vc-NZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="-904"/>
+            <point key="canvasLocation" x="445.60000000000002" y="-904.49775112443785"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WgP-oZ-3vd">
@@ -73,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1290" y="-903"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Channel ListVC-->
         <scene sceneID="nO8-mT-e8L">
             <objects>
-                <viewController id="b00-0u-N2Z" sceneMemberID="viewController">
+                <viewController id="b00-0u-N2Z" customClass="EventChannelListVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yCI-aM-6I1"/>
                         <viewControllerLayoutGuide type="bottom" id="QYj-QO-3Oa"/>

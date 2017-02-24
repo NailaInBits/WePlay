@@ -10,6 +10,8 @@
 		2178EA574B7F76ED442F8338 /* Pods_WePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51468018560ABED1492409A /* Pods_WePlay.framework */; };
 		E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C668B1E57A37700F83B1B /* LoginVC.swift */; };
 		E10C668F1E57AD2B00F83B1B /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E10C668E1E57AD2B00F83B1B /* bg.mp4 */; };
+		E165B9D91E60ADB5009B3910 /* LandingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165B9D81E60ADB5009B3910 /* LandingPageVC.swift */; };
+		E165B9DB1E60CE95009B3910 /* EventChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165B9DA1E60CE94009B3910 /* EventChannelListVC.swift */; };
 		E195A9761E60A3C5004E3ABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */; };
 		E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924971E576BF100B4F272 /* AppDelegate.swift */; };
 		E1B9249A1E576BF100B4F272 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924991E576BF100B4F272 /* RootViewController.swift */; };
@@ -45,6 +47,8 @@
 		B51468018560ABED1492409A /* Pods_WePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10C668B1E57A37700F83B1B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E10C668E1E57AD2B00F83B1B /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
+		E165B9D81E60ADB5009B3910 /* LandingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageVC.swift; sourceTree = "<group>"; };
+		E165B9DA1E60CE94009B3910 /* EventChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventChannelListVC.swift; sourceTree = "<group>"; };
 		E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B924941E576BF100B4F272 /* WePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B924971E576BF100B4F272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				E1B924A71E576BF100B4F272 /* Info.plist */,
 				E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */,
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
+				E165B9D81E60ADB5009B3910 /* LandingPageVC.swift */,
+				E165B9DA1E60CE94009B3910 /* EventChannelListVC.swift */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -357,7 +363,9 @@
 				E1B9249A1E576BF100B4F272 /* RootViewController.swift in Sources */,
 				E1B9249E1E576BF100B4F272 /* ModelController.swift in Sources */,
 				E1B9249C1E576BF100B4F272 /* DataViewController.swift in Sources */,
+				E165B9D91E60ADB5009B3910 /* LandingPageVC.swift in Sources */,
 				E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */,
+				E165B9DB1E60CE95009B3910 /* EventChannelListVC.swift in Sources */,
 				E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
