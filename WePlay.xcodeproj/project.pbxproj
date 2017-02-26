@@ -14,9 +14,6 @@
 		E165B9DB1E60CE95009B3910 /* EventChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165B9DA1E60CE94009B3910 /* EventChannelListVC.swift */; };
 		E195A9761E60A3C5004E3ABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */; };
 		E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924971E576BF100B4F272 /* AppDelegate.swift */; };
-		E1B9249A1E576BF100B4F272 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924991E576BF100B4F272 /* RootViewController.swift */; };
-		E1B9249C1E576BF100B4F272 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9249B1E576BF100B4F272 /* DataViewController.swift */; };
-		E1B9249E1E576BF100B4F272 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9249D1E576BF100B4F272 /* ModelController.swift */; };
 		E1B924A11E576BF100B4F272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B9249F1E576BF100B4F272 /* Main.storyboard */; };
 		E1B924A31E576BF100B4F272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B924A21E576BF100B4F272 /* Assets.xcassets */; };
 		E1B924A61E576BF100B4F272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */; };
@@ -52,9 +49,6 @@
 		E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B924941E576BF100B4F272 /* WePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B924971E576BF100B4F272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1B924991E576BF100B4F272 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		E1B9249B1E576BF100B4F272 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		E1B9249D1E576BF100B4F272 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		E1B924A01E576BF100B4F272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1B924A21E576BF100B4F272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1B924A51E576BF100B4F272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,18 +130,15 @@
 			isa = PBXGroup;
 			children = (
 				E1B924971E576BF100B4F272 /* AppDelegate.swift */,
-				E1B924991E576BF100B4F272 /* RootViewController.swift */,
-				E1B9249B1E576BF100B4F272 /* DataViewController.swift */,
-				E1B9249D1E576BF100B4F272 /* ModelController.swift */,
 				E10C668B1E57A37700F83B1B /* LoginVC.swift */,
+				E165B9D81E60ADB5009B3910 /* LandingPageVC.swift */,
+				E165B9DA1E60CE94009B3910 /* EventChannelListVC.swift */,
 				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
 				E1B924A21E576BF100B4F272 /* Assets.xcassets */,
 				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E1B924A71E576BF100B4F272 /* Info.plist */,
 				E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */,
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
-				E165B9D81E60ADB5009B3910 /* LandingPageVC.swift */,
-				E165B9DA1E60CE94009B3910 /* EventChannelListVC.swift */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -360,9 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1B9249A1E576BF100B4F272 /* RootViewController.swift in Sources */,
-				E1B9249E1E576BF100B4F272 /* ModelController.swift in Sources */,
-				E1B9249C1E576BF100B4F272 /* DataViewController.swift in Sources */,
 				E165B9D91E60ADB5009B3910 /* LandingPageVC.swift in Sources */,
 				E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */,
 				E165B9DB1E60CE95009B3910 /* EventChannelListVC.swift in Sources */,

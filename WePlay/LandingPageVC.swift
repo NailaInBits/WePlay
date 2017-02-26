@@ -10,9 +10,12 @@ import UIKit
 
 class LandingPageVC: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
+        self.profileImageView.clipsToBounds = true;
         
     }
 

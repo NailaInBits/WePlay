@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-enum Section: Int {
+/*enum Section: Int {
     case currentChannelsSection
 }
 
@@ -77,4 +77,4 @@ class EventChannelListVC: UIViewController {
         })
     }
 
-}
+} */
