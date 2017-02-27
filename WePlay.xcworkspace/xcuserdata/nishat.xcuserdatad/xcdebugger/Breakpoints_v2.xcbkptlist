@@ -22,31 +22,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "WePlay.LoginVC.player.getter : Swift.Optional&lt;__ObjC.AVPlayer&gt;"
+                  symbolName = "WePlay.LoginVC.__deallocating_deinit"
                   moduleName = "WePlay"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nishat/WePlay/WePlay/LoginVC.swift"
-                  timestampString = "509850949.36034"
+                  timestampString = "509858187.349565"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WePlay.LoginVC.player.setter : Swift.Optional&lt;__ObjC.AVPlayer&gt;"
-                  moduleName = "WePlay"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nishat/WePlay/WePlay/LoginVC.swift"
-                  timestampString = "509850949.364193"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "76">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -56,12 +41,42 @@
                   moduleName = "WePlay"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nishat/WePlay/WePlay/LoginVC.swift"
-                  timestampString = "509850949.368368"
+                  timestampString = "509858187.351734"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
                   offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WePlay.LoginVC.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; WePlay.LoginVC"
+                  moduleName = "WePlay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nishat/WePlay/WePlay/LoginVC.swift"
+                  timestampString = "509858187.353934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WePlay.LoginVC.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;WePlay.LoginVC&gt;"
+                  moduleName = "WePlay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nishat/WePlay/WePlay/LoginVC.swift"
+                  timestampString = "509858187.356412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -71,11 +86,11 @@
                   moduleName = "WePlay"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nishat/WePlay/WePlay/LoginVC.swift"
-                  timestampString = "509850949.371151"
+                  timestampString = "509858187.358253"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
                   offsetFromSymbolStart = "36">
                </Location>
             </Locations>
@@ -92,7 +107,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
-            endingLineNumber = "22">
+            endingLineNumber = "22"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,7 +123,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
-            endingLineNumber = "21">
+            endingLineNumber = "21"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -120,7 +139,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
-            endingLineNumber = "24">
+            endingLineNumber = "24"
+            landmarkName = "EventChannelListVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -134,7 +155,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
-            endingLineNumber = "19">
+            endingLineNumber = "19"
+            landmarkName = "EventChannelListVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -148,7 +171,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
-            endingLineNumber = "72">
+            endingLineNumber = "72"
+            landmarkName = "observeChannels()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
