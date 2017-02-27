@@ -11,5 +11,8 @@ target 'WePlay' do
   # Pods for Firebase
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
-
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'JSQMessagesViewController'
 end
