@@ -9,6 +9,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Landing PgVC-->
+        <scene sceneID="NsX-3K-xpD">
+            <objects>
+                <viewController id="2HO-mC-dZS" customClass="LandingPgVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d60-u8-vPh"/>
+                        <viewControllerLayoutGuide type="bottom" id="dQn-hP-kFU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kys-rx-dQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="landingPageBg" translatesAutoresizingMaskIntoConstraints="NO" id="6Hc-fs-8HH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="SF5-Z4-PM6"/>
+                                    <constraint firstAttribute="height" constant="667" id="vry-9d-aR2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBl-LU-m7C">
+                                <rect key="frame" x="117" y="263" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="F70-8i-jbV"/>
+                                    <constraint firstAttribute="width" constant="140" id="gQf-pA-Def"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="exampleprof"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2HO-mC-dZS" eventType="touchUpInside" id="CdX-fz-lQ2"/>
+                                </connections>
+                            </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-Mm-QP6">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Home" image="home" id="Mdv-oo-pzN"/>
+                                    <tabBarItem title="Channels" image="channels" id="Ajz-6s-mUR"/>
+                                    <tabBarItem title="Magic" image="magic" selectedImage="magic" id="Y1T-oE-tXJ"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hBl-LU-m7C" firstAttribute="centerX" secondItem="Kys-rx-dQw" secondAttribute="centerX" id="WUX-0F-qcN"/>
+                            <constraint firstItem="hBl-LU-m7C" firstAttribute="centerY" secondItem="Kys-rx-dQw" secondAttribute="centerY" id="rgY-dT-zuT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="hBl-LU-m7C" id="oUw-rR-zt7"/>
+                        <segue destination="oD4-qQ-11V" kind="show" identifier="toMap" id="Zcy-L9-6pe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bF-qJ-a01" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="-904"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="oXx-r3-2PY">
             <objects>
@@ -35,62 +91,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ces-4Z-frP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-303" y="-904"/>
+            <point key="canvasLocation" x="-1244" y="-904"/>
         </scene>
-        <!--Landing PageVC-->
-        <scene sceneID="Xm0-hW-8pN">
-            <objects>
-                <viewController id="nNs-R9-Mdw" customClass="LandingPageVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZER-qi-eWA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vjn-Dp-Vh1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Wuw-WV-X91">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyK-1F-Gex">
-                                <rect key="frame" x="0.0" y="28" width="104" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landingPageBg" translatesAutoresizingMaskIntoConstraints="NO" id="hOv-0b-yT6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exampleprof" translatesAutoresizingMaskIntoConstraints="NO" id="RiF-2Z-gbP">
-                                <rect key="frame" x="116.93274003926126" y="264.13440078348117" width="140.00000000000014" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES"/>
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
-                            </imageView>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWU-rM-kqk">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Home" id="F6w-Cy-FEU"/>
-                                    <tabBarItem title="Channels" id="MEQ-TZ-IOK"/>
-                                    <tabBarItem title="Schedule " id="ht3-dg-9mQ"/>
-                                    <tabBarItem title="Magic" id="fl4-rq-NwN"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="profileImageView" destination="RiF-2Z-gbP" id="l36-PP-d0y"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VPV-vc-NZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="445.60000000000002" y="-904.49775112443785"/>
-        </scene>
-        <!--View Controller-->
+        <!--Map? Near Me???-->
         <scene sceneID="WgP-oZ-3vd">
             <objects>
-                <viewController id="oD4-qQ-11V" sceneMemberID="viewController">
+                <viewController title="Map? Near Me???" id="oD4-qQ-11V" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E3q-4L-Bis"/>
                         <viewControllerLayoutGuide type="bottom" id="KLi-V5-tab"/>
@@ -98,12 +104,31 @@
                     <view key="view" contentMode="scaleToFill" id="dcP-BF-6tX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Near Me " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXR-Vw-h8t">
+                                <rect key="frame" x="97" y="282" width="180" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-iC-7uz">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Home" image="home" id="Swd-Mc-hLY"/>
+                                    <tabBarItem title="Channels" image="channels" id="0og-LI-2yw"/>
+                                    <tabBarItem title="Magic" image="magic" selectedImage="magic" id="p6g-ni-ak3"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfz-e0-Pwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="-903"/>
+            <point key="canvasLocation" x="-332" y="-72.413793103448285"/>
         </scene>
         <!--Event Channel ListVC-->
         <scene sceneID="nO8-mT-e8L">
@@ -143,9 +168,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="channels" width="32" height="32"/>
         <image name="exampleprof" width="300" height="300"/>
+        <image name="home" width="32" height="32"/>
         <image name="landingPageBg" width="621" height="1104"/>
         <image name="loginLogo" width="256" height="256"/>
+        <image name="magic" width="32" height="32"/>
         <image name="textName" width="219" height="53"/>
     </resources>
 </document>
