@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WePlay.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44CAD6CE523055ED339E87154473A254</key>
+		<key>3E80C08C02B2F149BB6E8B3B5811AE55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8ED9E051F232652983CE00F261C194C</key>
+		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7DCF2B547F7871B9BFD74DE93B0E173</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0581AF7BF4A6DA140D280B19ECC7BFF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

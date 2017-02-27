@@ -75,9 +75,16 @@ class LoginVC: UIViewController {
                 }
                 
                 // Present the main view
-                if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainView") {
+                if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "LandingPg") {
                     UIApplication.shared.keyWindow?.rootViewController = viewController
-                    self.dismiss(animated: true, completion: nil)
+                    
+                    let transition = CATransition()
+                    transition.duration = 1.0
+                    transition.type = kCATransitionMoveIn
+                    transition.subtype = kCATransitionFromTop
+                    
+                    self.view.layer.add(transition, forKey: kCATransition)
+                    self.dismiss(animated: false, completion: nil)
                 }
                 
             })

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bj6-Gb-A0g">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bj6-Gb-A0g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
         <!--Landing PgVC-->
         <scene sceneID="NsX-3K-xpD">
             <objects>
-                <viewController id="2HO-mC-dZS" customClass="LandingPgVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPg" id="2HO-mC-dZS" customClass="LandingPgVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d60-u8-vPh"/>
                         <viewControllerLayoutGuide type="bottom" id="dQn-hP-kFU"/>
@@ -55,6 +55,14 @@
                                     <tabBarItem title="Magic" image="magic" selectedImage="magic" id="Y1T-oE-tXJ"/>
                                 </items>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-R8-2U9">
+                                <rect key="frame" x="284" y="18" width="104" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Cat Profile Filled-50"/>
+                                <connections>
+                                    <action selector="logout:" destination="2HO-mC-dZS" eventType="touchUpInside" id="GDI-NX-lT4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -74,7 +82,7 @@
         <!--LoginVC-->
         <scene sceneID="oXx-r3-2PY">
             <objects>
-                <viewController id="Bj6-Gb-A0g" customClass="LoginVC" customModule="WePlay" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="Bj6-Gb-A0g" customClass="LoginVC" customModule="WePlay" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="So9-wm-e9w"/>
                         <viewControllerLayoutGuide type="bottom" id="7v7-Kz-57q"/>
@@ -205,6 +213,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cat Profile Filled-50" width="50" height="50"/>
         <image name="channels" width="32" height="32"/>
         <image name="exampleprof" width="300" height="300"/>
         <image name="home" width="32" height="32"/>
