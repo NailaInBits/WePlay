@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LandingPgVC: UIViewController, RadialMenuDelegate {
 
@@ -24,6 +25,20 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // Logout function
+    @IBAction func logout(_ sender: AnyObject) {
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Login") {
+            UIApplication.shared.keyWindow?.rootViewController = viewController
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
