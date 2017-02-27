@@ -7,8 +7,11 @@
 //
 
 import UIKit
-import FacebookLogin
 import AVFoundation
+import FBSDKLoginKit
+import FBSDKCoreKit
+import Firebase
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
@@ -35,18 +38,56 @@ class LoginVC: UIViewController {
                 self.player?.play()
             }
         })
-
-        //Facebook Login
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        loginButton.center = view.center
-        loginButton.frame = CGRect(x :0, y: 610, width: view.frame.width - 0, height: 60)
         
-        view.addSubview(loginButton)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // Facebook Login
+    @IBAction func facebookLogin(sender: UIButton) {
+        let fbLoginManager = FBSDKLoginManager()
+        fbLoginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self) { (result, error) in
+            if let error = error {
+                print("Failed to login: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let accessToken = FBSDKAccessToken.current() else {
+                print("Failed to get access token")
+                return
+            }
+            
+            let credential = FIRFacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+            
+            // Perform login by calling Firebase APIs
+            FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+                if let error = error {
+                    print("Login error: \(error.localizedDescription)")
+                    let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
+                    let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(okayAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                    return
+                }
+                
+                // Present the main view
+                if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainView") {
+                    UIApplication.shared.keyWindow?.rootViewController = viewController
+                    self.dismiss(animated: true, completion: nil)
+                }
+                
+            })
+            
+        }   
+    }
+    
 }
+
+
+
+
+

@@ -1,10 +1,15 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'WePlay' do
   use_frameworks!
 
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
+  # Pods for Facebook
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+
+  # Pods for Firebase
+  pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
