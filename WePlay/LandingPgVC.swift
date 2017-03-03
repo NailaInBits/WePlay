@@ -21,11 +21,13 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         self.button.clipsToBounds = true;
         self.radialMenu = RadialMenu()
         self.radialMenu.delegate = self
+        self.button.setBackgroundImage(self.radialMenu.getProfilePic(), for: UIControlState.normal)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     
     // Logout function
     @IBAction func logout(_ sender: AnyObject) {

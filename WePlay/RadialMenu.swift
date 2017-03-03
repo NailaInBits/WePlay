@@ -6,6 +6,10 @@
 //  Copyright © 2017 WePlay. All rights reserved.
 //
 import UIKit
+import FirebaseAuth
+
+var user = FIRAuth.auth()?.currentUser
+
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     switch (lhs, rhs) {
     case let (l?, r?):
@@ -212,5 +216,20 @@ class RadialMenu: UIView,RadialButtonDelegate{
             self.items = nil
         }
     }
+    
+    func getProfilePic() -> UIImage? {
+        
+        let imgURLString = "https://graph.facebook.com/" + "621159167" + "/picture?type=large"
+        let imgURL = URL(string: imgURLString)
+        
+        do {
+            let imageData = try Data(contentsOf: imgURL!)
+            let image = UIImage(data: imageData)
+            return image
+        } catch {
+            return nil
+        }
+    }
 }
+
 

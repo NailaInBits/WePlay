@@ -78,13 +78,7 @@ class LoginVC: UIViewController {
                 if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "LandingPg") {
                     UIApplication.shared.keyWindow?.rootViewController = viewController
                     
-                    let transition = CATransition()
-                    transition.duration = 1.0
-                    transition.type = kCATransitionMoveIn
-                    transition.subtype = kCATransitionFromTop
-                    
-                    self.view.layer.add(transition, forKey: kCATransition)
-                    self.dismiss(animated: false, completion: nil)
+                    self.dismiss(animated: true, completion: nil)
                 }
                 
             })
