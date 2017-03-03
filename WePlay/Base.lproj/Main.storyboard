@@ -40,7 +40,6 @@
                                     <constraint firstAttribute="height" constant="140" id="F70-8i-jbV"/>
                                     <constraint firstAttribute="width" constant="140" id="gQf-pA-Def"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="exampleprof"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="2HO-mC-dZS" eventType="touchUpInside" id="CdX-fz-lQ2"/>
                                 </connections>
@@ -215,7 +214,6 @@
     <resources>
         <image name="Cat Profile Filled-50" width="50" height="50"/>
         <image name="channels" width="32" height="32"/>
-        <image name="exampleprof" width="300" height="300"/>
         <image name="home" width="32" height="32"/>
         <image name="landingPageBg" width="621" height="1104"/>
         <image name="loginLogo" width="256" height="256"/>
