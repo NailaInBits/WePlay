@@ -12,7 +12,10 @@ target 'WePlay' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
-  pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/RemoteConfig'
   pod 'JSQMessagesViewController'
+  
+  #Pods for Aesthetics
+  pod 'SwiftGifOrigin'
 end

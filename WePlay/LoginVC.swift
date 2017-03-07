@@ -46,6 +46,7 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     // Facebook Login
     @IBAction func facebookLogin(sender: UIButton) {
         let fbLoginManager = FBSDKLoginManager()
@@ -87,8 +88,3 @@ class LoginVC: UIViewController {
     }
     
 }
-
-
-
-
-

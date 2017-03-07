@@ -87,12 +87,12 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         if index == 1 {
             performSegue(withIdentifier: "toMap", sender: self)
         } else if index == 2 {
-            performSegue(withIdentifier: "toMap", sender: self)
+            performSegue(withIdentifier: "toChannels", sender: self)
         } else if index == 3 {
-           performSegue(withIdentifier: "toMap", sender: self)
+           performSegue(withIdentifier: "toChannels", sender: self)
         }
         if index == 4 {
-            performSegue(withIdentifier: "toMap", sender: self)
+            performSegue(withIdentifier: "toChannels", sender: self)
         }
     }
 }
