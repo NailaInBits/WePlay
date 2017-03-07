@@ -17,6 +17,8 @@
 		E1348F8D1E63917000574AE3 /* LandingPgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1348F8C1E63917000574AE3 /* LandingPgVC.swift */; };
 		E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1348F8E1E6391E600574AE3 /* RadialMenu.swift */; };
 		E1348F911E6392B800574AE3 /* RadialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1348F901E6392B800574AE3 /* RadialButton.swift */; };
+		E13C9E801E6C69A7008235D9 /* MagicTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */; };
+		E13C9E881E6DFBF3008235D9 /* MagicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C9E871E6DFBF3008235D9 /* MagicVC.swift */; };
 		E195A9761E60A3C5004E3ABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */; };
 		E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924971E576BF100B4F272 /* AppDelegate.swift */; };
 		E1B924A11E576BF100B4F272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B9249F1E576BF100B4F272 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		E1348F8C1E63917000574AE3 /* LandingPgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPgVC.swift; sourceTree = "<group>"; };
 		E1348F8E1E6391E600574AE3 /* RadialMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialMenu.swift; sourceTree = "<group>"; };
 		E1348F901E6392B800574AE3 /* RadialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialButton.swift; sourceTree = "<group>"; };
+		E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicTBC.swift; sourceTree = "<group>"; };
+		E13C9E871E6DFBF3008235D9 /* MagicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicVC.swift; sourceTree = "<group>"; };
 		E14D5FEA1E634A330033AAF7 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B924941E576BF100B4F272 /* WePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,19 +163,21 @@
 				E10C668B1E57A37700F83B1B /* LoginVC.swift */,
 				E1348F8C1E63917000574AE3 /* LandingPgVC.swift */,
 				E1348F8E1E6391E600574AE3 /* RadialMenu.swift */,
-				E11AB5C01E65386600B2354E /* UIImage+Gif.swift */,
 				E1348F901E6392B800574AE3 /* RadialButton.swift */,
-				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
+				E13C9E871E6DFBF3008235D9 /* MagicVC.swift */,
 				E11AB5B81E64AF4000B2354E /* ChannelListVC.swift */,
 				E11AB5BC1E64B8A200B2354E /* Channel.swift */,
 				E11AB5BA1E64AF8F00B2354E /* ChannelViewVC.swift */,
 				E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */,
+				E11AB5C01E65386600B2354E /* UIImage+Gif.swift */,
+				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
 				E1B924A21E576BF100B4F272 /* Assets.xcassets */,
 				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E1B924A71E576BF100B4F272 /* Info.plist */,
 				E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */,
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
+				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -388,9 +394,11 @@
 				E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */,
 				E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */,
 				E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */,
+				E13C9E801E6C69A7008235D9 /* MagicTBC.swift in Sources */,
 				E1348F8D1E63917000574AE3 /* LandingPgVC.swift in Sources */,
 				E11AB5B91E64AF4000B2354E /* ChannelListVC.swift in Sources */,
 				E1348F911E6392B800574AE3 /* RadialButton.swift in Sources */,
+				E13C9E881E6DFBF3008235D9 /* MagicVC.swift in Sources */,
 				E11AB5C11E65386600B2354E /* UIImage+Gif.swift in Sources */,
 				E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */,
 				E1DAE80A1E65E80E0076E69A /* CreateChannelCell.swift in Sources */,

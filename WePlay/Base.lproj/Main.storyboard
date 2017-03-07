@@ -180,10 +180,89 @@
             </objects>
             <point key="canvasLocation" x="-332" y="-72.413793103448285"/>
         </scene>
-        <!--View Controller-->
+        <!--Magic-->
+        <scene sceneID="LhQ-5E-VIn">
+            <objects>
+                <viewController title="Magic" id="J1I-2E-lcv" customClass="MagicVC" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zfp-qE-FnW"/>
+                        <viewControllerLayoutGuide type="bottom" id="qb2-Ny-rCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p5g-0w-iRS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERs-fd-8EE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pickerView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vS1-5D-QQh">
+                                <rect key="frame" x="0.0" y="571" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86203926279999998" green="0.3934208662" blue="0.10339566059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a photo or Choose one" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-MG-QlH">
+                                <rect key="frame" x="0.0" y="301" width="375" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.86203926279999998" green="0.3934208662" blue="0.10339566059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Magic" id="4WP-Lk-s0l">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="s3J-dx-VpG">
+                            <color key="tintColor" red="0.99607843139999996" green="0.40784313729999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="camAction:" destination="J1I-2E-lcv" id="8XF-CH-3Zz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yC2-j8-24j">
+                            <color key="tintColor" red="0.82043740575897428" green="0.48063688487741507" blue="0.29689537966309798" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="saveAction:" destination="J1I-2E-lcv" id="ThZ-aI-PGE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="s3J-dx-VpG" id="K5y-KB-rcJ"/>
+                        <outlet property="directions" destination="DMF-MG-QlH" id="bRx-1X-AAk"/>
+                        <outlet property="filterPicker" destination="vS1-5D-QQh" id="3I9-hK-wbW"/>
+                        <outlet property="imageView" destination="ERs-fd-8EE" id="sQY-b0-XwD"/>
+                        <outlet property="saveButton" destination="yC2-j8-24j" id="EML-eI-r9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeP-rg-gTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-879.31034482758628"/>
+        </scene>
+        <!--MagicNavControllerScene-->
+        <scene sceneID="7mW-tl-NM0">
+            <objects>
+                <navigationController title="MagicNavControllerScene" id="Jry-My-kFD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zx8-a8-Ek1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J1I-2E-lcv" kind="relationship" relationship="rootViewController" id="U4t-Uq-jzE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAB-dX-fnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="-879"/>
+        </scene>
+        <!--Magic-->
         <scene sceneID="nO8-mT-e8L">
             <objects>
-                <viewController id="b00-0u-N2Z" sceneMemberID="viewController">
+                <viewController id="b00-0u-N2Z" customClass="Magic" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yCI-aM-6I1"/>
                         <viewControllerLayoutGuide type="bottom" id="QYj-QO-3Oa"/>
@@ -191,12 +270,38 @@
                     <view key="view" contentMode="scaleToFill" id="TZ1-eI-2pp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IGP-eW-yMW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjH-PW-7W0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbj-XS-E9b">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.020830747109999999" green="0.01444206149" blue="0.029827724359999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Take photo"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-wv-TTh">
+                                <rect key="frame" x="0.0" y="561" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="IGP-eW-yMW" id="ivd-lB-LFR"/>
+                        <outlet property="filterPicker" destination="RVS-wv-TTh" id="ltB-eY-r08"/>
+                        <outlet property="imageView" destination="pjH-PW-7W0" id="wVS-Qd-sqe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U55-Sp-Hlf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-904"/>
+            <point key="canvasLocation" x="3337" y="-879"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ev2-1T-qpf">
@@ -211,7 +316,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Vn-Gn-kVA" id="bg7-pt-Nfe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fac-aG-qzr">
@@ -240,7 +345,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeJ-aB-BLz" id="PfZ-d1-leO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auD-wC-Xcc">

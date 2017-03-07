@@ -17,7 +17,7 @@ final class ChannelViewVC: JSQMessagesViewController {
     
     var channelRef: FIRDatabaseReference?
     
-    private lazy var messageRef: FIRDatabaseReference = (self.channelRef?.child("messages"))!
+    private lazy var messageRef: FIRDatabaseReference = ((self.channelRef?.child("messages")))!
     fileprivate lazy var storageRef: FIRStorageReference = FIRStorage.storage().reference(forURL: "gs://weplay-1480204734004.appspot.com")
     private lazy var userIsTypingRef: FIRDatabaseReference = self.channelRef!.child("typingIndicator").child(self.senderId)
     private lazy var usersTypingQuery: FIRDatabaseQuery = self.channelRef!.child("typingIndicator").queryOrderedByValue().queryEqual(toValue: true)
@@ -126,7 +126,7 @@ final class ChannelViewVC: JSQMessagesViewController {
     
     //Firebase related methods
     private func observeMessages() {
-        messageRef = (channelRef?.child("messages"))!
+        messageRef = ((channelRef?.child("messages")))!
         let messageQuery = messageRef.queryLimited(toLast:25)
         newMessageRefHandle = messageQuery.observe(.childAdded, with: { (snapshot) -> Void in
             let messageData = snapshot.value as! Dictionary<String, String>
