@@ -31,6 +31,7 @@
 		E1C170BC1E6299A8008E4D69 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C668B1E57A37700F83B1B /* LoginVC.swift */; };
 		E1DAE8061E65E6BA0076E69A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DAE8051E65E6BA0076E69A /* AdSupport.framework */; };
 		E1DAE80A1E65E80E0076E69A /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */; };
+		E1F22C1D1E6F859C00BEE359 /* SwipeNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		E1C170B41E629950008E4D69 /* Pods_WePlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WePlay.framework; path = "../Library/Developer/Xcode/DerivedData/WePlay-apzhlywhxqmorwdpmcqpgicpfixb/Build/Products/Debug-iphonesimulator/Pods_WePlay.framework"; sourceTree = "<group>"; };
 		E1DAE8051E65E6BA0076E69A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
+		E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeNavigationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
 				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
+				E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */,
+				E1F22C1D1E6F859C00BEE359 /* SwipeNavigationVC.swift in Sources */,
 				E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */,
 				E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */,
 				E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */,
