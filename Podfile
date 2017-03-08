@@ -18,6 +18,5 @@ target 'WePlay' do
   
   #Pods for Aesthetics
   pod 'SwiftGifOrigin'
-  pod 'SwipeNavigationController', '~> 2.0.0'
 
 end

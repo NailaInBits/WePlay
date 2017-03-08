@@ -162,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				E1B924971E576BF100B4F272 /* AppDelegate.swift */,
+				E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */,
 				E10C668B1E57A37700F83B1B /* LoginVC.swift */,
 				E1348F8C1E63917000574AE3 /* LandingPgVC.swift */,
 				E1348F8E1E6391E600574AE3 /* RadialMenu.swift */,
@@ -180,7 +181,6 @@
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
 				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
-				E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";

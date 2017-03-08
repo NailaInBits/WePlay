@@ -61,7 +61,6 @@ PODS:
   - JSQSystemSoundPlayer (2.0.1)
   - Protobuf (3.2.0)
   - SwiftGifOrigin (1.6.1)
-  - SwipeNavigationController (2.0.2)
 
 DEPENDENCIES:
   - Bolts
@@ -74,7 +73,6 @@ DEPENDENCIES:
   - Firebase/Storage
   - JSQMessagesViewController
   - SwiftGifOrigin
-  - SwipeNavigationController (~> 2.0.0)
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -94,8 +92,7 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
-  SwipeNavigationController: 592681599a3105a44484e5b7af9055cee7a0d7b9
 
-PODFILE CHECKSUM: 1422d09a7ea04e9a05f2420a9c96c559114a9c5e
+PODFILE CHECKSUM: 2b7a2237dbcac51ddba8860e0b0c7990e4b9a629
 
 COCOAPODS: 1.1.1
