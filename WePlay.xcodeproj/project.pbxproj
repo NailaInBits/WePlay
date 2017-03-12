@@ -147,9 +147,9 @@
 		E13E11F21E745DCA0042C372 /* TBC */ = {
 			isa = PBXGroup;
 			children = (
+				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
 				E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */,
 				E11B0C891E73298E00C61361 /* TransitionManager.swift */,
-				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
 			);
 			name = TBC;
 			sourceTree = "<group>";
@@ -207,15 +207,11 @@
 				E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */,
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
-<<<<<<< HEAD
-				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
 				4973E6B31E7254050046F060 /* ProfileButtonView.swift */,
-=======
 				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E13E11F21E745DCA0042C372 /* TBC */,
 				E13E11F91E749E400042C372 /* SegueFromLeft.swift */,
 				E13E11F71E747C920042C372 /* CustomSegue.swift */,
->>>>>>> current
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -611,7 +607,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WePlay.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/B1ackK3yz/Documents/iOS Apps/WePlay/WePlay/Bridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/nishat/WePlay/WePlay/Bridging.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -629,7 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WePlay.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/B1ackK3yz/Documents/iOS Apps/WePlay/WePlay/Bridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/nishat/WePlay/WePlay/Bridging.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

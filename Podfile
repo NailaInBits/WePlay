@@ -18,10 +18,6 @@ target 'WePlay' do
   
   #Pods for Aesthetics
   pod 'SwiftGifOrigin'
-<<<<<<< HEAD
-
-end
-=======
  
 end
->>>>>>> current
+

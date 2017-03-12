@@ -28,7 +28,6 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         super.didReceiveMemoryWarning()
     }
     
-<<<<<<< HEAD
     @IBAction func showPopup(_ sender: AnyObject) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfilePg") as! ProfileVC
         self.addChildViewController(popOverVC)
@@ -38,7 +37,6 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
     }
     
     
-=======
     // Logout function
     @IBAction func logout(_ sender: AnyObject) {
         let firebaseAuth = FIRAuth.auth()
@@ -54,7 +52,6 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
     }
     
     //Radial Menu Buttons
->>>>>>> current
     @IBAction func buttonPressed(_ sender: AnyObject) {
         self.radialMenu.buttonsWillAnimateFromButton(sender as! UIButton, frame: self.button.frame, view: self.view)
     }

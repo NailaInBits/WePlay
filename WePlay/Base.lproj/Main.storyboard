@@ -761,12 +761,9 @@
         <image name="landingPageBg" width="621" height="1104"/>
         <image name="loginLogo" width="256" height="256"/>
         <image name="magic" width="32" height="32"/>
-<<<<<<< HEAD
         <image name="pencil" width="32" height="32"/>
         <image name="power-button-outline" width="64" height="64"/>
-=======
         <image name="magicBG" width="640" height="640"/>
->>>>>>> current
         <image name="textName" width="219" height="53"/>
         <image name="venue" width="669" height="1500"/>
     </resources>
