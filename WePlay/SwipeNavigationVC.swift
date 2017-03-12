@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwipeNavigationVC: UIViewController {
+/*class SwipeNavigationVC: UIViewController {
     
     @IBOutlet var UIScrollView: UIScrollView!
 
@@ -53,4 +53,4 @@ class SwipeNavigationVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-}
+} */
