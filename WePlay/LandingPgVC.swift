@@ -17,8 +17,8 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.button.layer.cornerRadius = self.button.frame.size.width / 2;
-        self.button.clipsToBounds = true;
+        self.button.layer.cornerRadius = self.button.frame.size.width / 2
+        self.button.clipsToBounds = true
         self.radialMenu = RadialMenu()
         self.radialMenu.delegate = self
         self.button.setBackgroundImage(self.radialMenu.getProfilePic(), for: UIControlState.normal)
@@ -28,20 +28,14 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    
-    // Logout function
-    @IBAction func logout(_ sender: AnyObject) {
-        let firebaseAuth = FIRAuth.auth()
-        do {
-            try firebaseAuth?.signOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Login") {
-            UIApplication.shared.keyWindow?.rootViewController = viewController
-            self.dismiss(animated: true, completion: nil)
-        }
+    @IBAction func showPopup(_ sender: AnyObject) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfilePg") as! ProfileVC
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
     }
+    
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
         self.radialMenu.buttonsWillAnimateFromButton(sender as! UIButton, frame: self.button.frame, view: self.view)

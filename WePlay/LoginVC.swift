@@ -46,6 +46,42 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func checkForFirstTime() {
+        let ref = FIRDatabase.database().reference(fromURL: "https://weplay-1480204734004.firebaseio.com/")
+        guard let uid = user?.uid else {
+            return
+        }
+        ref.queryOrdered(byChild: "email").queryEqual(toValue: uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            if (snapshot.value == nil) {
+                let usersReference = ref.child("users").child(uid)
+        
+                let graphRequest = FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, email, name"]).start{
+                    (connection, result, err) in
+        
+                    if ((err) != nil) {
+                        print("Error: \(err)")
+                    } else {
+                        print("fetched user: \(result)")
+        
+                        let values: [String:AnyObject] = result as! [String : AnyObject]
+        
+                        // update our database
+                        usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                        // if there's an error in saving to our firebase database
+                        if err != nil {
+                            print(err)
+                            return
+                        }
+                        // no error
+                        print("Save the user successfully into Firebase database")
+                        })
+                    }
+                }
+            } else {
+                return
+            }
+        })
+    }
     
     // Facebook Login
     @IBAction func facebookLogin(sender: UIButton) {
@@ -55,7 +91,7 @@ class LoginVC: UIViewController {
                 print("Failed to login: \(error.localizedDescription)")
                 return
             }
-            
+        
             guard let accessToken = FBSDKAccessToken.current() else {
                 print("Failed to get access token")
                 return
@@ -65,16 +101,19 @@ class LoginVC: UIViewController {
             
             // Perform login by calling Firebase APIs
             FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
-                if let error = error {
-                    print("Login error: \(error.localizedDescription)")
-                    let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
+                if ((error) != nil) {
+                    print("Login error: \(error?.localizedDescription)")
+                    let alertController = UIAlertController(title: "Login Error", message: error?.localizedDescription, preferredStyle: .alert)
                     let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(okayAction)
                     self.present(alertController, animated: true, completion: nil)
                     
                     return
+                } else {
+                    
+                    self.checkForFirstTime()
                 }
-                
+        
                 // Present the main view
                 if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "LandingPg") {
                     UIApplication.shared.keyWindow?.rootViewController = viewController
