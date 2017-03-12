@@ -17,11 +17,15 @@
 		E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AB5BA1E64AF8F00B2354E /* ChannelViewVC.swift */; };
 		E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AB5BC1E64B8A200B2354E /* Channel.swift */; };
 		E11AB5C11E65386600B2354E /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AB5C01E65386600B2354E /* UIImage+Gif.swift */; };
+		E11B0C881E724CAF00C61361 /* CurrentEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B0C871E724CAE00C61361 /* CurrentEventsVC.swift */; };
+		E11B0C8A1E73298F00C61361 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B0C891E73298E00C61361 /* TransitionManager.swift */; };
 		E1348F8D1E63917000574AE3 /* LandingPgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1348F8C1E63917000574AE3 /* LandingPgVC.swift */; };
 		E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1348F8E1E6391E600574AE3 /* RadialMenu.swift */; };
 		E1348F911E6392B800574AE3 /* RadialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1348F901E6392B800574AE3 /* RadialButton.swift */; };
 		E13C9E801E6C69A7008235D9 /* MagicTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */; };
 		E13C9E881E6DFBF3008235D9 /* MagicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C9E871E6DFBF3008235D9 /* MagicVC.swift */; };
+		E13E11F81E747C920042C372 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E11F71E747C920042C372 /* CustomSegue.swift */; };
+		E13E11FA1E749E410042C372 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E11F91E749E400042C372 /* SegueFromLeft.swift */; };
 		E195A9761E60A3C5004E3ABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */; };
 		E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B924971E576BF100B4F272 /* AppDelegate.swift */; };
 		E1B924A11E576BF100B4F272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B9249F1E576BF100B4F272 /* Main.storyboard */; };
@@ -67,11 +71,15 @@
 		E11AB5BA1E64AF8F00B2354E /* ChannelViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewVC.swift; sourceTree = "<group>"; };
 		E11AB5BC1E64B8A200B2354E /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		E11AB5C01E65386600B2354E /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		E11B0C871E724CAE00C61361 /* CurrentEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentEventsVC.swift; sourceTree = "<group>"; };
+		E11B0C891E73298E00C61361 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		E1348F8C1E63917000574AE3 /* LandingPgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPgVC.swift; sourceTree = "<group>"; };
 		E1348F8E1E6391E600574AE3 /* RadialMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialMenu.swift; sourceTree = "<group>"; };
 		E1348F901E6392B800574AE3 /* RadialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialButton.swift; sourceTree = "<group>"; };
 		E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicTBC.swift; sourceTree = "<group>"; };
 		E13C9E871E6DFBF3008235D9 /* MagicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicVC.swift; sourceTree = "<group>"; };
+		E13E11F71E747C920042C372 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		E13E11F91E749E400042C372 /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		E14D5FEA1E634A330033AAF7 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B924941E576BF100B4F272 /* WePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +144,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E13E11F21E745DCA0042C372 /* TBC */ = {
+			isa = PBXGroup;
+			children = (
+				E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */,
+				E11B0C891E73298E00C61361 /* TransitionManager.swift */,
+				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
+			);
+			name = TBC;
+			sourceTree = "<group>";
+		};
+		E13E11F31E745E5B0042C372 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				E11AB5B81E64AF4000B2354E /* ChannelListVC.swift */,
+				E11AB5BC1E64B8A200B2354E /* Channel.swift */,
+				E11AB5BA1E64AF8F00B2354E /* ChannelViewVC.swift */,
+				E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */,
+				E11AB5C01E65386600B2354E /* UIImage+Gif.swift */,
+			);
+			name = Channels;
+			sourceTree = "<group>";
+		};
 		E1B9248B1E576BF000B4F272 = {
 			isa = PBXGroup;
 			children = (
@@ -162,28 +192,30 @@
 			isa = PBXGroup;
 			children = (
 				E1B924971E576BF100B4F272 /* AppDelegate.swift */,
-				E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */,
 				E10C668B1E57A37700F83B1B /* LoginVC.swift */,
 				E1348F8C1E63917000574AE3 /* LandingPgVC.swift */,
 				E1348F8E1E6391E600574AE3 /* RadialMenu.swift */,
 				E1348F901E6392B800574AE3 /* RadialButton.swift */,
 				E13C9E871E6DFBF3008235D9 /* MagicVC.swift */,
-				E11AB5B81E64AF4000B2354E /* ChannelListVC.swift */,
-				E11AB5BC1E64B8A200B2354E /* Channel.swift */,
-				E11AB5BA1E64AF8F00B2354E /* ChannelViewVC.swift */,
-				E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */,
-				E11AB5C01E65386600B2354E /* UIImage+Gif.swift */,
+				E13E11F31E745E5B0042C372 /* Channels */,
+				E11B0C871E724CAE00C61361 /* CurrentEventsVC.swift */,
 				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
 				4973E6B11E7249560046F060 /* ProfileVC.swift */,
 				49B87A231E74CFA300C41DF4 /* ProfileBg.swift */,
 				E1B924A21E576BF100B4F272 /* Assets.xcassets */,
-				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E1B924A71E576BF100B4F272 /* Info.plist */,
 				E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */,
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
+<<<<<<< HEAD
 				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
 				4973E6B31E7254050046F060 /* ProfileButtonView.swift */,
+=======
+				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
+				E13E11F21E745DCA0042C372 /* TBC */,
+				E13E11F91E749E400042C372 /* SegueFromLeft.swift */,
+				E13E11F71E747C920042C372 /* CustomSegue.swift */,
+>>>>>>> current
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -396,7 +428,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13E11F81E747C920042C372 /* CustomSegue.swift in Sources */,
 				E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */,
+				E13E11FA1E749E410042C372 /* SegueFromLeft.swift in Sources */,
+				E11B0C881E724CAF00C61361 /* CurrentEventsVC.swift in Sources */,
 				E1F22C1D1E6F859C00BEE359 /* SwipeNavigationVC.swift in Sources */,
 				4973E6B21E7249560046F060 /* ProfileVC.swift in Sources */,
 				E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */,
@@ -404,6 +439,7 @@
 				4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */,
 				E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */,
 				E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */,
+				E11B0C8A1E73298F00C61361 /* TransitionManager.swift in Sources */,
 				E13C9E801E6C69A7008235D9 /* MagicTBC.swift in Sources */,
 				E1348F8D1E63917000574AE3 /* LandingPgVC.swift in Sources */,
 				E11AB5B91E64AF4000B2354E /* ChannelListVC.swift in Sources */,

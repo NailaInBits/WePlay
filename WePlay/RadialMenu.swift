@@ -76,14 +76,12 @@ class RadialMenu: UIView,RadialButtonDelegate{
         var  angle:CGFloat = 0
         
         if arc>=360 {
-            
-            angle         = CGFloat(360)/CGFloat(itemCount)
-            
+            angle         = CGFloat(-180)/CGFloat(itemCount)
         } else if itemCount>1 {
             angle         = CGFloat(arc)/CGFloat((itemCount-1))
         }
         
-        let centerX       = frame.origin.x + (frame.size.height/2);
+        let centerX       = frame.origin.x + (frame.size.height/1.6);
         let centerY       = frame.origin.y + (frame.size.width/2);
         let origin        = CGPoint(x: centerX, y: centerY);
         
@@ -98,7 +96,7 @@ class RadialMenu: UIView,RadialButtonDelegate{
         
         while currentItem <= itemCount {
             
-            let radians = (angle * (CGFloat(currentItem) - 1.0) + CGFloat(start)) * (CGFloat(M_PI)/CGFloat(180))
+            let radians = (angle * (CGFloat(currentItem) - 2.0) + CGFloat(start)) * (CGFloat(M_PI)/CGFloat(180))
             
             let x      = round (centerX + CGFloat(radius) * cos(CGFloat(radians)));
             let y      = round (centerY + CGFloat(radius) * sin(CGFloat(radians)));
@@ -163,17 +161,45 @@ class RadialMenu: UIView,RadialButtonDelegate{
     
     func shouldRotateButton(_ button:UIButton,forDuration:CGFloat, forwardDirection:Bool) {
         
-        let spinAnimation            = CABasicAnimation(keyPath: "transform.rotation")
+       /* let spinAnimation            = CABasicAnimation(keyPath: "transform.rotation")
         spinAnimation.duration       = Double(forDuration)
         spinAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        var totalDuration            = CGFloat(M_PI) * CGFloat(self.items.count)
+        var totalDuration            = 1.5 * CGFloat(self.items.count)
         
         if forwardDirection {
             
             totalDuration = totalDuration * -1
         }
         spinAnimation.toValue = NSNumber(value: Float(totalDuration) as Float)
-        button.layer.add(spinAnimation, forKey: "spinAnimation")
+        button.layer.add(spinAnimation, forKey: "spinAnimation")*/
+        
+        
+         
+         let spinAnimation            = CABasicAnimation(keyPath: "transform.scale")
+         //spinAnimation.fromValue = Int(1.5)
+         //spinAnimation.toValue = Int(1.0)
+         spinAnimation.duration       = 0.5 //Double(forDuration)
+         spinAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+         var totalDuration            = 0.5 * CGFloat(self.items.count) //CGFloat(M_PI)
+         
+         if forwardDirection {
+         
+         totalDuration = totalDuration * -1
+         }
+         spinAnimation.toValue = NSNumber(value: Float(totalDuration) as Float)
+         button.layer.add(spinAnimation, forKey: "spinAnimation")
+ 
+     /*   let popAnimation            = CABasicAnimation(keyPath: "transform.scale")
+        popAnimation.fromValue = Int(1.5)
+        popAnimation.toValue = Int(1.0)
+        
+        popAnimation.duration = 0.5
+        popAnimation.isRemovedOnCompletion = false
+        popAnimation.fillMode = kCAFillModeForwards
+        popAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        //popAnimation.toValue = NSNumber(value: Float(forDuration) as Float)
+        button.layer.add(popAnimation, forKey: "scale") */
+        
     }
     
     @objc func willRecoilItem() {
@@ -205,6 +231,7 @@ class RadialMenu: UIView,RadialButtonDelegate{
     func buttonPressed(_ sender:AnyObject) {
         
         let button = sender as! RadialButton
+        
         self.delegate?.radialMenudidSelectItemAtIndex(self, index: button.tag)
     }
     
