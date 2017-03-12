@@ -234,4 +234,5 @@ class MagicVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, U
         myAlertVC.addAction(okAction)
         self.present(myAlertVC, animated: true, completion: nil)
     }
+    
 }
