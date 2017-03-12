@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2178EA574B7F76ED442F8338 /* Pods_WePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51468018560ABED1492409A /* Pods_WePlay.framework */; };
+		4973E6B21E7249560046F060 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973E6B11E7249560046F060 /* ProfileVC.swift */; };
+		4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973E6B31E7254050046F060 /* ProfileButtonView.swift */; };
+		49B87A241E74CFA300C41DF4 /* ProfileBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B87A231E74CFA300C41DF4 /* ProfileBg.swift */; };
+		53A984102E797BC0499D4695 /* Pods_WePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A64DB8E378CC339F53E67 /* Pods_WePlay.framework */; };
 		E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C668B1E57A37700F83B1B /* LoginVC.swift */; };
 		E10C668F1E57AD2B00F83B1B /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E10C668E1E57AD2B00F83B1B /* bg.mp4 */; };
 		E11AB5B91E64AF4000B2354E /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AB5B81E64AF4000B2354E /* ChannelListVC.swift */; };
@@ -52,11 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CA50444CBBEE7ED893B34B8 /* Pods-WePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.release.xcconfig"; sourceTree = "<group>"; };
-		495D44151163812C16396A32 /* Pods-WePlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.debug.xcconfig"; sourceTree = "<group>"; };
-		4FD6BD180BF371070F4F40D2 /* Pods_WePlayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51468018560ABED1492409A /* Pods_WePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5FE98BCA7CE947299740E7E /* Pods_WePlayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		209A64DB8E378CC339F53E67 /* Pods_WePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4973E6B11E7249560046F060 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4973E6B31E7254050046F060 /* ProfileButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
+		49B87A231E74CFA300C41DF4 /* ProfileBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBg.swift; sourceTree = "<group>"; };
+		94FD9880296593FEB59F26D9 /* Pods-WePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.release.xcconfig"; sourceTree = "<group>"; };
+		9A70378DFE354060CBCFA864 /* Pods-WePlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.debug.xcconfig"; sourceTree = "<group>"; };
 		E10C668B1E57A37700F83B1B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E10C668E1E57AD2B00F83B1B /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
 		E11AB5B81E64AF4000B2354E /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
@@ -82,7 +86,6 @@
 		E1B924B71E576BF100B4F272 /* WePlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WePlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B924BB1E576BF100B4F272 /* WePlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WePlayUITests.swift; sourceTree = "<group>"; };
 		E1B924BD1E576BF100B4F272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1C170B41E629950008E4D69 /* Pods_WePlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WePlay.framework; path = "../Library/Developer/Xcode/DerivedData/WePlay-apzhlywhxqmorwdpmcqpgicpfixb/Build/Products/Debug-iphonesimulator/Pods_WePlay.framework"; sourceTree = "<group>"; };
 		E1DAE8051E65E6BA0076E69A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
 		E1F22C1C1E6F859C00BEE359 /* SwipeNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeNavigationVC.swift; sourceTree = "<group>"; };
@@ -94,7 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DAE8061E65E6BA0076E69A /* AdSupport.framework in Frameworks */,
-				2178EA574B7F76ED442F8338 /* Pods_WePlay.framework in Frameworks */,
+				53A984102E797BC0499D4695 /* Pods_WePlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,19 +122,16 @@
 			isa = PBXGroup;
 			children = (
 				E1DAE8051E65E6BA0076E69A /* AdSupport.framework */,
-				E1C170B41E629950008E4D69 /* Pods_WePlay.framework */,
-				B51468018560ABED1492409A /* Pods_WePlay.framework */,
-				4FD6BD180BF371070F4F40D2 /* Pods_WePlayTests.framework */,
-				B5FE98BCA7CE947299740E7E /* Pods_WePlayUITests.framework */,
+				209A64DB8E378CC339F53E67 /* Pods_WePlay.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7264F0660FE427CC4B4A909C /* Pods */ = {
+		797B0E8E4FFEEAB8AEE5AB9A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				495D44151163812C16396A32 /* Pods-WePlay.debug.xcconfig */,
-				1CA50444CBBEE7ED893B34B8 /* Pods-WePlay.release.xcconfig */,
+				9A70378DFE354060CBCFA864 /* Pods-WePlay.debug.xcconfig */,
+				94FD9880296593FEB59F26D9 /* Pods-WePlay.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -143,8 +143,8 @@
 				E1B924AF1E576BF100B4F272 /* WePlayTests */,
 				E1B924BA1E576BF100B4F272 /* WePlayUITests */,
 				E1B924951E576BF100B4F272 /* Products */,
-				7264F0660FE427CC4B4A909C /* Pods */,
 				55FB6E22379C19DD423DCD6C /* Frameworks */,
+				797B0E8E4FFEEAB8AEE5AB9A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +174,8 @@
 				E1DAE8091E65E80E0076E69A /* CreateChannelCell.swift */,
 				E11AB5C01E65386600B2354E /* UIImage+Gif.swift */,
 				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
+				4973E6B11E7249560046F060 /* ProfileVC.swift */,
+				49B87A231E74CFA300C41DF4 /* ProfileBg.swift */,
 				E1B924A21E576BF100B4F272 /* Assets.xcassets */,
 				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E1B924A71E576BF100B4F272 /* Info.plist */,
@@ -181,6 +183,7 @@
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
 				E13C9E7F1E6C69A7008235D9 /* MagicTBC.swift */,
+				4973E6B31E7254050046F060 /* ProfileButtonView.swift */,
 			);
 			path = WePlay;
 			sourceTree = "<group>";
@@ -210,12 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B924C01E576BF100B4F272 /* Build configuration list for PBXNativeTarget "WePlay" */;
 			buildPhases = (
-				A367B7B0476C5140B77C7EEF /* [CP] Check Pods Manifest.lock */,
+				B88473441540E3254EBAD108 /* [CP] Check Pods Manifest.lock */,
 				E1B924901E576BF000B4F272 /* Sources */,
 				E1B924911E576BF000B4F272 /* Frameworks */,
 				E1B924921E576BF000B4F272 /* Resources */,
-				7701177C5B119903074EF73D /* [CP] Embed Pods Frameworks */,
-				688A17008C2D19893F57F0ED /* [CP] Copy Pods Resources */,
+				CD0D25479E9EB801F08E0320 /* [CP] Embed Pods Frameworks */,
+				45E6382678D8C0DC552925E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,7 +344,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		688A17008C2D19893F57F0ED /* [CP] Copy Pods Resources */ = {
+		45E6382678D8C0DC552925E3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,22 +359,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePlay/Pods-WePlay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7701177C5B119903074EF73D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePlay/Pods-WePlay-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A367B7B0476C5140B77C7EEF /* [CP] Check Pods Manifest.lock */ = {
+		B88473441540E3254EBAD108 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,6 +374,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		CD0D25479E9EB801F08E0320 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePlay/Pods-WePlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -395,7 +398,10 @@
 			files = (
 				E1B924981E576BF100B4F272 /* AppDelegate.swift in Sources */,
 				E1F22C1D1E6F859C00BEE359 /* SwipeNavigationVC.swift in Sources */,
+				4973E6B21E7249560046F060 /* ProfileVC.swift in Sources */,
 				E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */,
+				49B87A241E74CFA300C41DF4 /* ProfileBg.swift in Sources */,
+				4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */,
 				E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */,
 				E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */,
 				E13C9E801E6C69A7008235D9 /* MagicTBC.swift in Sources */,
@@ -559,7 +565,7 @@
 		};
 		E1B924C11E576BF100B4F272 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 495D44151163812C16396A32 /* Pods-WePlay.debug.xcconfig */;
+			baseConfigurationReference = 9A70378DFE354060CBCFA864 /* Pods-WePlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -569,7 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WePlay.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/nishat/WePlay/WePlay/Bridging.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/B1ackK3yz/Documents/iOS Apps/WePlay/WePlay/Bridging.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -577,7 +583,7 @@
 		};
 		E1B924C21E576BF100B4F272 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CA50444CBBEE7ED893B34B8 /* Pods-WePlay.release.xcconfig */;
+			baseConfigurationReference = 94FD9880296593FEB59F26D9 /* Pods-WePlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -587,7 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WePlay.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/nishat/WePlay/WePlay/Bridging.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/B1ackK3yz/Documents/iOS Apps/WePlay/WePlay/Bridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
