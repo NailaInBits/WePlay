@@ -172,7 +172,7 @@ class RadialMenu: UIView,RadialButtonDelegate{
         }
         spinAnimation.toValue = NSNumber(value: Float(totalDuration) as Float)
         button.layer.add(spinAnimation, forKey: "spinAnimation")*/
-        
+        //Lol message here
         
          
          let spinAnimation            = CABasicAnimation(keyPath: "transform.scale")

@@ -15,9 +15,6 @@ target 'WePlay' do
   pod 'Firebase/Database'
   pod 'Firebase/RemoteConfig'
   pod 'JSQMessagesViewController'
-  
-  #Pods for Aesthetics
-  pod 'SwiftGifOrigin'
- 
+
 end
 

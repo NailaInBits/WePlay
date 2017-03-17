@@ -60,7 +60,6 @@ PODS:
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
   - Protobuf (3.2.0)
-  - SwiftGifOrigin (1.6.1)
 
 DEPENDENCIES:
   - Bolts
@@ -72,7 +71,6 @@ DEPENDENCIES:
   - Firebase/RemoteConfig
   - Firebase/Storage
   - JSQMessagesViewController
-  - SwiftGifOrigin
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -91,8 +89,7 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
-  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
 
-PODFILE CHECKSUM: ecbc1d1ba78432c369024edb6e7c0b9fa3b44fd0
+PODFILE CHECKSUM: cf956068754f3d575fc88a8d790b41df81b4f312
 
 COCOAPODS: 1.1.1
