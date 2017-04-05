@@ -13,7 +13,6 @@
 		49129D211E78C47F0004BF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49129D201E78C47F0004BF11 /* ViewController.swift */; };
 		49129D231E78E0E20004BF11 /* PastEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49129D221E78E0E20004BF11 /* PastEvent.swift */; };
 		4973E6B21E7249560046F060 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973E6B11E7249560046F060 /* ProfileVC.swift */; };
-		4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973E6B31E7254050046F060 /* ProfileButtonView.swift */; };
 		49B87A241E74CFA300C41DF4 /* ProfileBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B87A231E74CFA300C41DF4 /* ProfileBg.swift */; };
 		53A984102E797BC0499D4695 /* Pods_WePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A64DB8E378CC339F53E67 /* Pods_WePlay.framework */; };
 		E10C668C1E57A37700F83B1B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C668B1E57A37700F83B1B /* LoginVC.swift */; };
@@ -71,7 +70,6 @@
 		49129D201E78C47F0004BF11 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49129D221E78E0E20004BF11 /* PastEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEvent.swift; sourceTree = "<group>"; };
 		4973E6B11E7249560046F060 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		4973E6B31E7254050046F060 /* ProfileButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
 		49B87A231E74CFA300C41DF4 /* ProfileBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBg.swift; sourceTree = "<group>"; };
 		94FD9880296593FEB59F26D9 /* Pods-WePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.release.xcconfig"; sourceTree = "<group>"; };
 		9A70378DFE354060CBCFA864 /* Pods-WePlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WePlay/Pods-WePlay.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				E195A9751E60A3C4004E3ABE /* GoogleService-Info.plist */,
 				E10C668E1E57AD2B00F83B1B /* bg.mp4 */,
 				E14D5FEA1E634A330033AAF7 /* Bridging.h */,
-				4973E6B31E7254050046F060 /* ProfileButtonView.swift */,
 				E1B924A41E576BF100B4F272 /* LaunchScreen.storyboard */,
 				E13E11F21E745DCA0042C372 /* TBC */,
 				E13E11F91E749E400042C372 /* SegueFromLeft.swift */,
@@ -414,7 +411,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CD0D25479E9EB801F08E0320 /* [CP] Embed Pods Frameworks */ = {
@@ -448,7 +445,6 @@
 				49129D211E78C47F0004BF11 /* ViewController.swift in Sources */,
 				E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */,
 				49B87A241E74CFA300C41DF4 /* ProfileBg.swift in Sources */,
-				4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */,
 				E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */,
 				E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */,
 				E11B0C8A1E73298F00C61361 /* TransitionManager.swift in Sources */,
