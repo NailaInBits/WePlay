@@ -202,7 +202,7 @@ class MagicVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, U
         
         let context = CIContext(options: nil)
         
-        /***********************
+        /*
         This is where the image rotates 45 degrees??????
         *************************************************/
         let outputCGImage = context.createCGImage(myFilter!.outputImage!, from: myFilter!.outputImage!.extent)
