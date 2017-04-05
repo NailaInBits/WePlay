@@ -10,8 +10,7 @@
 #endif
 #endif
 
-#import "JSQSystemSoundPlayer.h"
 
-FOUNDATION_EXPORT double JSQSystemSoundPlayerVersionNumber;
-FOUNDATION_EXPORT const unsigned char JSQSystemSoundPlayerVersionString[];
+FOUNDATION_EXPORT double SwiftGifOriginVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftGifOriginVersionString[];
 

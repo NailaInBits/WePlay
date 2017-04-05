@@ -24,6 +24,8 @@ class MagicVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.tabBar.isHidden = true
 
         self.filterTitleList = ["* Choose Filter *",
                                 "Blur",

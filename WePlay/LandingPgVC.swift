@@ -28,6 +28,11 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    // Unwind function
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        // Empty cuz it's chilling as an index
+    }
+    
     @IBAction func showPopup(_ sender: AnyObject) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfilePg") as! ProfileVC
         self.addChildViewController(popOverVC)
@@ -78,10 +83,10 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         if index == 1 {
             button.setImage(UIImage(named: "nearMe"), for:UIControlState())
         } else if index == 2 {
-            button.setImage(UIImage(named: "pastEvents"), for:UIControlState())
+            button.setImage(UIImage(named: "currentEvent"), for:UIControlState())
         }
         if index == 3 {
-            button.setImage(UIImage(named: "currentEvent"), for:UIControlState())
+            button.setImage(UIImage(named: "pastEvents"), for:UIControlState())
         } 
         
         return button
@@ -119,11 +124,11 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         progressLine.add(animateStrokeEnd, forKey: "animate stroke end animation") */
         
         if index == 1 {
-            performSegue(withIdentifier: "toMap", sender: self)
+            performSegue(withIdentifier: "toPast", sender: self)
         } else if index == 2 {
             performSegue(withIdentifier: "toCurrent", sender: self)
         } else if index == 3 {
-           performSegue(withIdentifier: "toCurrent", sender: self)
+           performSegue(withIdentifier: "toMap", sender: self)
         }
     }
     
@@ -147,4 +152,5 @@ class LandingPgVC: UIViewController, RadialMenuDelegate {
         segue.animationType = .GrowScale
         return segue
     }
+    
 }

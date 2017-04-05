@@ -109,6 +109,7 @@
                         <segue destination="zQz-cm-e9O" kind="show" identifier="toCurrent" id="CjL-gC-BG0"/>
                         <segue destination="J7v-Lp-U18" kind="custom" identifier="home2channels" customClass="CustomUnwindSegue" customModule="WePlay" customModuleProvider="target" id="45A-HP-hIo"/>
                         <segue destination="Jry-My-kFD" kind="custom" identifier="home2magic" customClass="CustomSegue" customModule="WePlay" customModuleProvider="target" id="X2g-fv-u7d"/>
+                        <segue destination="0a3-Qx-pbj" kind="show" identifier="toPast" id="JyA-g6-Xo2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bF-qJ-a01" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Az5-Rb-g0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538.39999999999998" y="-904.49775112443785"/>
+            <point key="canvasLocation" x="-156" y="-1246"/>
         </scene>
         <!--Map? Near Me???-->
         <scene sceneID="WgP-oZ-3vd">
@@ -339,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfz-e0-Pwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1700" y="345"/>
+            <point key="canvasLocation" x="-1970" y="345"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="YIM-eg-buz">
@@ -357,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwR-OG-bbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-724" y="1087"/>
+            <point key="canvasLocation" x="-1524" y="1433"/>
         </scene>
         <!--Venue-->
         <scene sceneID="ZkS-ub-1zn">
@@ -381,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNg-5a-WPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="1085.3073463268368"/>
+            <point key="canvasLocation" x="-716" y="1433"/>
         </scene>
         <!--Current EventsVC-->
         <scene sceneID="gyl-gB-evA">
@@ -413,6 +414,9 @@
                                 <rect key="frame" x="0.0" y="517" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="AqL-6N-G2R" kind="unwind" unwindAction="prepareForUnwindWithSegue:" id="Ubu-Qe-g3y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B4-iA-zCc">
                                 <rect key="frame" x="0.0" y="40" width="375" height="151"/>
@@ -424,8 +428,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jn-pR-yob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AqL-6N-G2R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-234.40000000000001" y="344.97751124437787"/>
+            <point key="canvasLocation" x="-978" y="345"/>
         </scene>
         <!--Magic-->
         <scene sceneID="LhQ-5E-VIn">
@@ -534,6 +539,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeP-rg-gTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="645.60000000000002" y="-485.30734632683664"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="RsC-ff-wif">
+            <objects>
+                <tableViewController id="G5w-2W-2Or" customClass="PastEventTable" customModule="WePlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mke-jd-OMR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="72" id="zK1-vG-oAM" customClass="PastEventCell" customModule="WePlay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zK1-vG-oAM" id="hAN-Zp-SEx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ys2-f3-lVd">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="71"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVl-5p-u4M">
+                                            <rect key="frame" x="130" y="0.0" width="245" height="71"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="QVl-5p-u4M" firstAttribute="leading" secondItem="ys2-f3-lVd" secondAttribute="trailing" id="f7v-nk-eY6"/>
+                                        <constraint firstItem="QVl-5p-u4M" firstAttribute="leading" secondItem="ys2-f3-lVd" secondAttribute="trailing" id="fG7-to-aRH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G5w-2W-2Or" id="shf-2G-0rh"/>
+                            <outlet property="delegate" destination="G5w-2W-2Or" id="7dk-kI-5G8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="c92-9d-4Be"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejY-XM-sN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.199999999999999" y="1168.9655172413793"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kum-4q-mGP">
+            <objects>
+                <navigationController id="0a3-Qx-pbj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eLV-5K-mM3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="G5w-2W-2Or" kind="relationship" relationship="rootViewController" id="YTf-mO-jSe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG3-5l-g0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="345"/>
         </scene>
         <!--MagicNavControllerScene-->
         <scene sceneID="7mW-tl-NM0">
@@ -644,7 +709,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Vn-Gn-kVA" id="bg7-pt-Nfe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fac-aG-qzr">
@@ -673,7 +738,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeJ-aB-BLz" id="PfZ-d1-leO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auD-wC-Xcc">
@@ -761,14 +826,14 @@
         <image name="landingPageBg" width="621" height="1104"/>
         <image name="loginLogo" width="256" height="256"/>
         <image name="magic" width="32" height="32"/>
+        <image name="magicBG" width="640" height="640"/>
         <image name="pencil" width="32" height="32"/>
         <image name="power-button-outline" width="64" height="64"/>
-        <image name="magicBG" width="640" height="640"/>
         <image name="textName" width="219" height="53"/>
         <image name="venue" width="669" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xv6-Si-V6F"/>
-        <segue reference="Oi3-Xg-SQZ"/>
+        <segue reference="45A-HP-hIo"/>
+        <segue reference="kzE-ZJ-DMc"/>
     </inferredMetricsTieBreakers>
 </document>

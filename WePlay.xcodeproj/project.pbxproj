@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49012A471E762F500001D7A3 /* PastEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49012A461E762F500001D7A3 /* PastEventsVC.swift */; };
+		49129D1D1E787FAA0004BF11 /* PastEventBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49129D1C1E787FAA0004BF11 /* PastEventBg.swift */; };
+		49129D1F1E78B78B0004BF11 /* PastEventTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49129D1E1E78B78B0004BF11 /* PastEventTable.swift */; };
+		49129D211E78C47F0004BF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49129D201E78C47F0004BF11 /* ViewController.swift */; };
+		49129D231E78E0E20004BF11 /* PastEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49129D221E78E0E20004BF11 /* PastEvent.swift */; };
 		4973E6B21E7249560046F060 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973E6B11E7249560046F060 /* ProfileVC.swift */; };
 		4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973E6B31E7254050046F060 /* ProfileButtonView.swift */; };
 		49B87A241E74CFA300C41DF4 /* ProfileBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B87A231E74CFA300C41DF4 /* ProfileBg.swift */; };
@@ -60,6 +65,11 @@
 
 /* Begin PBXFileReference section */
 		209A64DB8E378CC339F53E67 /* Pods_WePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49012A461E762F500001D7A3 /* PastEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEventsVC.swift; sourceTree = "<group>"; };
+		49129D1C1E787FAA0004BF11 /* PastEventBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEventBg.swift; sourceTree = "<group>"; };
+		49129D1E1E78B78B0004BF11 /* PastEventTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEventTable.swift; sourceTree = "<group>"; };
+		49129D201E78C47F0004BF11 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49129D221E78E0E20004BF11 /* PastEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEvent.swift; sourceTree = "<group>"; };
 		4973E6B11E7249560046F060 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4973E6B31E7254050046F060 /* ProfileButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
 		49B87A231E74CFA300C41DF4 /* ProfileBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBg.swift; sourceTree = "<group>"; };
@@ -199,7 +209,12 @@
 				E13C9E871E6DFBF3008235D9 /* MagicVC.swift */,
 				E13E11F31E745E5B0042C372 /* Channels */,
 				E11B0C871E724CAE00C61361 /* CurrentEventsVC.swift */,
+				49129D221E78E0E20004BF11 /* PastEvent.swift */,
 				E1B9249F1E576BF100B4F272 /* Main.storyboard */,
+				49129D1E1E78B78B0004BF11 /* PastEventTable.swift */,
+				49129D201E78C47F0004BF11 /* ViewController.swift */,
+				49129D1C1E787FAA0004BF11 /* PastEventBg.swift */,
+				49012A461E762F500001D7A3 /* PastEventsVC.swift */,
 				4973E6B11E7249560046F060 /* ProfileVC.swift */,
 				49B87A231E74CFA300C41DF4 /* ProfileBg.swift */,
 				E1B924A21E576BF100B4F272 /* Assets.xcassets */,
@@ -430,14 +445,19 @@
 				E11B0C881E724CAF00C61361 /* CurrentEventsVC.swift in Sources */,
 				E1F22C1D1E6F859C00BEE359 /* SwipeNavigationVC.swift in Sources */,
 				4973E6B21E7249560046F060 /* ProfileVC.swift in Sources */,
+				49129D211E78C47F0004BF11 /* ViewController.swift in Sources */,
 				E11AB5BD1E64B8A200B2354E /* Channel.swift in Sources */,
 				49B87A241E74CFA300C41DF4 /* ProfileBg.swift in Sources */,
 				4973E6B41E7254050046F060 /* ProfileButtonView.swift in Sources */,
 				E11AB5BB1E64AF8F00B2354E /* ChannelViewVC.swift in Sources */,
 				E1348F8F1E6391E600574AE3 /* RadialMenu.swift in Sources */,
 				E11B0C8A1E73298F00C61361 /* TransitionManager.swift in Sources */,
+				49012A471E762F500001D7A3 /* PastEventsVC.swift in Sources */,
 				E13C9E801E6C69A7008235D9 /* MagicTBC.swift in Sources */,
+				49129D231E78E0E20004BF11 /* PastEvent.swift in Sources */,
+				49129D1F1E78B78B0004BF11 /* PastEventTable.swift in Sources */,
 				E1348F8D1E63917000574AE3 /* LandingPgVC.swift in Sources */,
+				49129D1D1E787FAA0004BF11 /* PastEventBg.swift in Sources */,
 				E11AB5B91E64AF4000B2354E /* ChannelListVC.swift in Sources */,
 				E1348F911E6392B800574AE3 /* RadialButton.swift in Sources */,
 				E13C9E881E6DFBF3008235D9 /* MagicVC.swift in Sources */,
@@ -607,7 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WePlay.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/nishat/WePlay/WePlay/Bridging.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/B1ackK3yz/Documents/iOS Apps/WePlay/WePlay/Bridging.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -625,7 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WePlay.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/nishat/WePlay/WePlay/Bridging.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/B1ackK3yz/Documents/iOS Apps/WePlay/WePlay/Bridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
