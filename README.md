@@ -32,7 +32,7 @@ pod install
 - Swift 3
 - iOS 8.0 or later
 
-#Thank you
+# Thank you
 - Icon made by [Freepik](http://www.freepik.com/) 
 - Login video: Coverr.com
 - Libraries and SDKs: Google Maps, Google Places, Facebook, PopupDialog
