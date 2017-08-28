@@ -17,7 +17,7 @@ A location based social media app, dedicated to nurturing more human connections
 sudo gem install cocoapods
 
 # Clone the source code
-git clone git@github.com:NailaInBits/WePlayImagineCup.git
+git clone git@github.com:NailaInBits/WePlay.git
 
 # Change directory (cd) to your source code and install dependencies
 # Where "Podfile" resides
